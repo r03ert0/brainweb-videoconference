@@ -15,7 +15,7 @@ const confOptions = {
     openBridgeChannel: true
 };
 
-const roomName = "BrainWeb";
+const roomName = "brainweb";
 const jitsiURL = 'meet.jit.si';
 
 var subdomain = "";
