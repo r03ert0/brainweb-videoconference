@@ -65,7 +65,7 @@ analytics: {
     },
     useStunTurn: true, // use XEP-0215 to fetch TURN servers for the JVB connection
     useTurnUdp: true,
-    serviceUrl: '//' + jitsiURL + '/http-bind',
+    serviceUrl: '//' + jitsiURL + '/http-bind?room=' + roomName,
     // bosh: '//' + jitsiURL + '/http-bind?room=' + roomName, // FIXME: use xep-0156 for that
     // websocket: 'wss://' + jitsiURL + '/xmpp-websocket', // FIXME: use xep-0156 for that
     clientNode: 'http://jitsi.org/jitsimeet', // The name of client node advertised in XEP-0115 'c' stanza
