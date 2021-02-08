@@ -7,7 +7,31 @@
     <script src="libs/strophe/strophe.js"></script>
     <script src="libs/strophe/strophe.disco.min.js?v=1"></script>
     <script src="./lib-jitsi-meet.min.js"></script>
-    <script src="example.js" ></script>
+    <script src="index.js" ></script>
+    <style>
+        .frame {
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid black;
+            width:150px;
+            height:150px;
+            border-radius: 150px;
+            position: relative;
+        }
+        .video {
+            position: absolute;
+            width:150px;
+            height:150px;
+            border-radius: 150px;
+            -webkit-mask-image: radial-gradient(circle, white 100%, black 100%);
+        }
+        video {
+            position:absolute;
+            top:0;
+            left:-75px;
+            width:300px;
+        }
+    </style>
 </head>
 <body>
     <a href="#" onclick="unload()">Unload</a>
@@ -16,7 +40,7 @@
         Change audio output device
         <select id="audioOutputSelect" onchange="changeAudioOutput(this)"></select>
     </div>
-    <video id="localVideo" autoplay="true"></video>
-    <audio id="localAudio" autoplay="true" muted="true"></audio>
+    <!-- <video id="localVideo" autoplay="true"></video>
+    <audio id="localAudio" autoplay="true" muted="true"></audio> -->
 </body>
 </html>
